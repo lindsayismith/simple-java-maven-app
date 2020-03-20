@@ -7,6 +7,43 @@
   <version>1.0-SNAPSHOT</version>
   <name>my-app</name>
   <url>http://maven.apache.org</url>
+  
+  <distributionManagement>
+    <snapshotRepository>
+      <id>artifact-registry</id>
+      <url>artifactregistry://us-west1-maven.pkg.dev/lindsaysmith-cicd-bugbash-1/maven</url>
+    </snapshotRepository>
+    <repository>
+      <id>artifact-registry-release</id>
+      <url>artifactregistry://us-east1-maven.pkg.dev/lindsaysmith-cuj-test1/maven-release</url>
+    </repository>
+  </distributionManagement>
+
+  <repositories>
+    <repository>
+      <id>artifact-registry</id>
+      <url>artifactregistry://us-west1-maven.pkg.dev/lindsaysmith-cicd-bugbash-1/maven</url>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+    <repository>
+      <id>artifact-registry-release</id>
+      <url>artifactregistry://us-east1-maven.pkg.dev/lindsaysmith-cuj-test1/maven-release</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
+  
+  
+  
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -33,5 +70,12 @@
         </configuration>
       </plugin>
     </plugins>
+    <extensions>
+      <extension>
+        <groupId>com.google.cloud.artifactregistry</groupId>
+        <artifactId>artifactregistry-maven-wagon</artifactId>
+        <version>2.0.0</version>
+      </extension>
+    </extensions>
   </build>
 </project>
