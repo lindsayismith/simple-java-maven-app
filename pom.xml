@@ -11,7 +11,7 @@
   <distributionManagement>
     <snapshotRepository>
       <id>artifact-registry</id>
-      <url>artifactregistry://us-west1-maven.pkg.dev/lindsaysmith-cicd-bugbash-1/maven</url>
+      <url>artifactregistry://us-east1-maven.pkg.dev/lindsaysmith-cuj-test1/maven-release</url>
     </snapshotRepository>
     <repository>
       <id>artifact-registry-release</id>
@@ -22,7 +22,7 @@
   <repositories>
     <repository>
       <id>artifact-registry</id>
-      <url>artifactregistry://us-west1-maven.pkg.dev/lindsaysmith-cicd-bugbash-1/maven</url>
+      <url>artifactregistry://us-east1-maven.pkg.dev/lindsaysmith-cuj-test1/maven-release</url>
       <releases>
         <enabled>false</enabled>
       </releases>
