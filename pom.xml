@@ -11,18 +11,18 @@
   <distributionManagement>
     <snapshotRepository>
       <id>artifact-registry</id>
-      <url>artifactregistry://us-east1-maven.pkg.dev/lindsaysmith-cuj-test1/maven-release</url>
+      <url>artifactregistry://us-west1-maven.pkg.dev/lindsaysmith-convoy-playground/maven-jenkins-test</url>
     </snapshotRepository>
     <repository>
       <id>artifact-registry-release</id>
-      <url>artifactregistry://us-east1-maven.pkg.dev/lindsaysmith-cuj-test1/maven-release</url>
+      <url>artifactregistry://us-west1-maven.pkg.dev/lindsaysmith-convoy-playground/maven-jenkins-test</url>
     </repository>
   </distributionManagement>
 
   <repositories>
     <repository>
       <id>artifact-registry</id>
-      <url>artifactregistry://us-east1-maven.pkg.dev/lindsaysmith-cuj-test1/maven-release</url>
+      <url>artifactregistry://us-west1-maven.pkg.dev/lindsaysmith-convoy-playground/maven-jenkins-test</url>
       <releases>
         <enabled>false</enabled>
       </releases>
@@ -32,7 +32,7 @@
     </repository>
     <repository>
       <id>artifact-registry-release</id>
-      <url>artifactregistry://us-east1-maven.pkg.dev/lindsaysmith-cuj-test1/maven-release</url>
+      <url>artifactregistry://us-west1-maven.pkg.dev/lindsaysmith-convoy-playground/maven-jenkins-test</url>
       <releases>
         <enabled>true</enabled>
       </releases>
